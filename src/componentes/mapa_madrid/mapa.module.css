@@ -1,0 +1,224 @@
+.contenedor_mapa {
+    width: 100%;
+    height: 414px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.mapa {
+    width: 100%;
+    height: 100%;
+}
+
+.market_img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.titulo_mapa {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #B32234;
+    margin: 70px 0 30px 0;
+}
+
+.titulo_mapa span {
+    color: #003071;
+}
+
+.contenedor_info_mapa h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #003071;
+    margin: 60px 0 30px 0;
+}
+
+.contenedor_info_mapa h2 span {
+    color: #B32234;
+}
+
+.boton_encontrar {
+    width: 149px;
+    height: 40px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B32234;
+    text-decoration: none;
+    border: 2px solid #003071;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.conenedor_info_tienda {
+    display: none;
+}
+
+.conenedor_info_tienda_show {
+    display: block;
+}
+
+.nombre_ciudad {
+    margin: 0;
+}
+
+.item {
+    background: #fff;
+    padding: 8px 10px;
+    margin: 0;
+}
+
+.popup-delicias {
+    top: -35 !important;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 25px;
+}
+
+.nombre_ciudad_popup {
+    font-weight: 800;
+    font-size: 13px;
+    color: #003071;
+}
+
+.direccion_popup {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #003071;
+    outline: none;
+}
+
+.contenedor_popuop p {
+    margin: 0;
+
+}
+
+.telefono_popup {
+    color: #B32234;
+    text-decoration: none;
+}
+
+.telefono_popup span {
+    color: #003071;
+    font-weight: 600;
+}
+
+.boton_como_llegar {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    padding: 2px 8px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #B32234;
+    border: 2px solid #003071;
+    border-radius: 8px;
+}
+
+.boton_ver_mas {
+    color: #003071;
+    font-weight: 900;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.reset_map {
+    z-index: 90;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
+
+@media (min-width: 1191px) {
+    .contenedor_mapa {
+        width: 100%;
+        height: 414px;
+        overflow: hidden;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 100%;
+    }
+
+    .market_img {
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .titulo_mapa {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #B32234;
+        margin: 30px 0 30px 0;
+    }
+
+    .titulo_mapa span {
+        color: #003071;
+    }
+
+    .contenedor_info_mapa h2 {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #003071;
+        margin: 60px 0 30px 0;
+    }
+
+    .contenedor_info_mapa h2 span {
+        color: #B32234;
+    }
+
+    .boton_encontrar {
+        width: 149px;
+        height: 40px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #B32234;
+        text-decoration: none;
+        border: 2px solid #003071;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .conenedor_info_tienda {
+        display: none;
+    }
+
+    .conenedor_info_tienda_show {
+        display: block;
+    }
+}

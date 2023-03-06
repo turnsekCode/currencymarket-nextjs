@@ -1,0 +1,137 @@
+.contenedor_header {
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+    background-color: #003071;
+}
+
+.contenedor_padding {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 0 0 30px;
+}
+
+.contenedor_llamar {
+    display: none;
+}
+
+.logo {
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contenedor_padding img {
+    width: 55%;
+}
+
+.logo span {
+    font-weight: 600;
+}
+
+.contenedor_logos {
+    display: flex;
+    flex-direction: column;
+}
+.contenedor_logos img{
+    width: 100%;
+}
+
+@media (min-width: 1191px) {
+    .contenedor_header {
+        background: #ffffff;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+        z-index: 200;
+        background-color: #003071;
+    }
+
+    .contenedor_padding {
+        max-width: 1060px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    .contenedor_padding img {
+        width: 65%;
+    }
+
+    .contenedor_llamar {
+        display: block;
+    }
+
+    .contenedor_llamar a {
+        display: flex;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: 10px 18px;
+        gap: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contenedor_llamar h3 {
+        margin: 0;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    .contenedor_llamar h3 span {
+        color: #fff;
+    }
+
+    .logo {
+        color: #fff;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .logo span {
+        font-weight: 500;
+    }
+
+    .contenedor_logos {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_logos img {
+        width: 201px;
+        height: 39px;
+    }
+}
+
+/*@media (min-width: 610px) {
+    .contenedor_llamar {
+        display: block;
+    }
+    .contenedor_llamar a {
+        display: flex;
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        padding: 10px 18px;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .contenedor_llamar h3 {
+        margin: 0;
+        font-weight: 900;
+    }
+
+    .contenedor_llamar h3 span {
+        color: #B32234;
+    }
+}*/

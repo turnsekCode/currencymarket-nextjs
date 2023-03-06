@@ -1,0 +1,48 @@
+.contenedor_llamar_fijo {
+    height: 60px;
+    position: fixed;
+    bottom: 15px;
+    left: 7px;
+    background: #003071;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 900;
+    padding: 0px 20px;
+    border-radius: 5pc;
+    box-shadow: 0px 6px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor_llamar_fijo a {
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    padding: 10px 5px;
+    gap: 10px;
+    text-decoration: none;
+    width: 260px;
+    height: 40px;
+}
+
+.contenedor_llamar_fijo a svg {
+    color: #fff;
+}
+
+.contenedor_llamar_fijo h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.contenedor_llamar_fijo h3 span {
+    color: #fff;
+}
+
+@media (min-width: 1191px) {
+    .contenedor_llamar_fijo {
+        display: none;
+    }
+}

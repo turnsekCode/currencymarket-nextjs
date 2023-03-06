@@ -2,15 +2,27 @@
   "name": "currency_nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://currencymarket.es",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.3",
+    "animate.css": "^4.1.1",
+    "mapbox-gl": "^2.11.0",
     "next": "13.2.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "react-map-gl": "^7.0.19",
+    "react-router-dom": "^6.7.0",
+    "react-scroll": "^1.8.9",
+    "react-scroll-to-top": "^3.0.0",
+    "sharp": "^0.31.3"
   }
 }

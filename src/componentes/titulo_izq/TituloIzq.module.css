@@ -1,0 +1,55 @@
+.contenedor_titulos {
+    color: #003071;
+    font-size: 30px;
+}
+
+.contenedor_titulos h2,
+h1 {
+    margin: 0;
+}
+
+.contenedor_titulos h1 {
+    font-size: 60px;
+    color: #B32234;
+    font-weight: 900;
+}
+
+.titulo_span {
+    font-weight: 800;
+}
+
+.contenedor_titulos h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+@media (min-width: 1191px) {
+    .contenedor_titulos {
+        color: #003071;
+        font-size: 30px;
+    }
+
+    .contenedor_titulos h2,
+    h1 {
+        margin: 0;
+    }
+
+    .contenedor_titulos h1 {
+        font-size: 80px;
+        color: #B32234;
+        font-weight: 900;
+    }
+
+    .titulo_span {
+        font-weight: 800;
+    }
+
+    .contenedor_titulos h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+    }
+}

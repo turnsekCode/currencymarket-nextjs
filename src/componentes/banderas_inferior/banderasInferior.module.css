@@ -1,0 +1,31 @@
+.banderas_inferior {
+    width: 118px;
+    height: 240px;
+}
+
+.contenedor_banderas_inferior {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -240px;
+}
+
+.izq {
+    display: none;
+}
+
+@media (min-width: 1191px) {
+    .banderas_inferior {
+        width: 118px;
+        height: 240px;
+    }
+
+    .contenedor_banderas_inferior {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -240px;
+    }
+
+    .izq {
+        display: block;
+    }
+}

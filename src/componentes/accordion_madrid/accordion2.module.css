@@ -1,0 +1,271 @@
+/*estilos de estrellas de google*/
+
+.img_stars {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+    width: 69px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    left: 3px;
+}
+
+.imgValoracion {
+    background-repeat: repeat-x;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+}
+
+.logo_google {
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: -3px;
+
+}
+
+.logo_google img {
+    width: 100%;
+}
+
+.contenedor_google_accordion {
+    display: flex;
+}
+
+.nombre_tienda {
+    margin: 0 0 14px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #003071;
+}
+
+.contenedor_resenas span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FBCF00;
+}
+
+.numero_reviews {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #003071;
+}
+
+.numero_reviews span {
+    font-weight: 800;
+    color: #003071;
+}
+
+.contacto_accordion {
+    font-weight: 900;
+    font-size: 15px;
+    color: #003071;
+}
+
+.direccion_accordion {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #003071;
+    outline: none;
+}
+
+.telefono_accordion {
+    color: #b32234;
+}
+
+.contenedor_horarios {
+    margin-top: 20px;
+    padding: 0;
+    color: #003071;
+}
+
+.contenedor_horarios li {
+    list-style: none;
+    font-size: 13px;
+}
+
+.contenedor_accordion {
+    margin-top: 30px;
+}
+
+.css-1fjvggn-MuiPaper-root-MuiAccordion-root {
+    border: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
+.contenedor_accordion2 {
+    height: 0;
+    transition: 0.5s;
+
+}
+
+.contenedor_accordion2_active {
+    height: 350px;
+    visibility: visible;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.cabecera_estrellas {
+    visibility: hidden;
+    transition: 0.1s;
+    padding: 0 35px;
+    position: relative;
+}
+
+.cabecera_estrellas_active {
+    visibility: visible;
+    transition: 0.9s;
+    padding: 0 35px;
+    position: relative;
+}
+
+.contenedor_titulo_accordion span svg {
+    color: #FBCF00;
+    margin-right: 8px;
+    margin-bottom: 7px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.active span svg {
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+.contenedor_titulo_accordion {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boton_cierre {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    color: #003071;
+    cursor: pointer;
+}
+
+@media (min-width: 1191px) {
+
+    /*estilos de estrellas de google*/
+    .img_stars {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+        width: 69px;
+        background-repeat: repeat-x;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        left: 3px;
+    }
+
+    .imgValoracion {
+        background-repeat: repeat-x;
+        display: block;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+    }
+
+    .logo_google {
+        width: 100px;
+        display: inline-block;
+        margin: 0 9px -22px 8px;
+    }
+
+    .logo_google img {
+        width: 100%;
+    }
+
+    .contenedor_google_accordion {
+        display: flex;
+    }
+
+    .nombre_tienda {
+        margin: 0 0 14px 0px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 22px;
+        color: #003071;
+    }
+
+    .contenedor_resenas span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FBCF00;
+    }
+
+    .numero_reviews {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        color: #003071;
+    }
+
+    .numero_reviews span {
+        font-weight: 800;
+        color: #003071;
+    }
+
+    .contacto_accordion {
+        font-weight: 900;
+        font-size: 15px;
+        color: #003071;
+    }
+
+    .direccion_accordion {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        color: #003071;
+        outline: none;
+    }
+
+    .telefono_accordion {
+        color: #b32234;
+    }
+
+    .contenedor_horarios {
+        margin-top: 20px;
+        padding: 0;
+        color: #003071;
+    }
+
+    .contenedor_horarios li {
+        list-style: none;
+        font-size: 13px;
+    }
+
+    .contenedor_accordion {
+        margin-top: 30px;
+    }
+
+    .boton_cierre {
+        position: absolute;
+        right: 300px;
+        top: 19px;
+        color: #003071;
+        cursor: pointer;
+    }
+}
