@@ -102,6 +102,7 @@ const Mapa = ({ santantoni }) => {
             className={styles.reset_map}
             onClick={() => {
               resetMap();
+              setShowPopup(false);
             }}
           >
             Reset Map

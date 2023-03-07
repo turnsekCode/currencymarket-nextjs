@@ -94,6 +94,7 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
             className={styles.reset_map}
             onClick={() => {
               resetMap();
+              setShowPopup(false);
             }}
           >
             Reset Map
@@ -116,14 +117,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">Delicias</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>Delicias</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3X3XYRj"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {delicias.result?.formatted_address}
                 </a>
@@ -132,19 +133,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                   href="http://bit.ly/3X3XYRj"
                   rel="noreferrer"
                   ƒ
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${delicias.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {delicias.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="delicias"
                     smooth={true}
@@ -175,14 +176,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">San Bernardo</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>San Bernardo</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3V13uCi"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {bernardo.result?.formatted_address}
                 </a>
@@ -190,19 +191,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                 <a
                   href="http://bit.ly/3V13uCi"
                   rel="noreferrer"
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${bernardo.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {bernardo.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="bernardo"
                     smooth={true}
@@ -233,14 +234,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">Cuatro Caminos</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>Cuatro Caminos</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3EFq1iI"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {caminos.result?.formatted_address}
                 </a>
@@ -248,19 +249,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                 <a
                   href="http://bit.ly/3EFq1iI"
                   rel="noreferrer"
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${caminos.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {caminos.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="caminos"
                     smooth={true}
@@ -291,14 +292,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">Tirso de molina</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>Tirso de molina</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3tFiXwm"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {tirso.result?.formatted_address}
                 </a>
@@ -306,19 +307,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                 <a
                   href="http://bit.ly/3tFiXwm"
                   rel="noreferrer"
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${tirso.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {tirso.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="tirso"
                     smooth={true}
@@ -349,14 +350,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">Tetuán</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>Tetuán</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3tFiXwm"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {tetuan.result?.formatted_address}
                 </a>
@@ -364,19 +365,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                 <a
                   href="http://bit.ly/3tFiXwm"
                   rel="noreferrer"
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${tetuan.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {tetuan.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="tetuan"
                     smooth={true}
@@ -407,14 +408,14 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
               anchor={null}
               onClose={() => setShowPopup(false)}
             >
-              <div className="contenedor_popuop">
-                <p className="nombre_ciudad_popup">Alcala-Ventas</p>
-                <p className="nombre_ciudad_popup">Contacto:</p>
+              <div className={styles.contenedor_popuop}>
+                <p className={styles.nombre_ciudad_popup}>Alcala-Ventas</p>
+                <p className={styles.nombre_ciudad_popup}>Contacto:</p>
                 <a
                   href="http://bit.ly/3THXcpZ"
                   rel="noreferrer"
                   target="_blank"
-                  className="direccion_popup"
+                  className={styles.direccion_popup}
                 >
                   {alcala.result?.formatted_address}
                 </a>
@@ -422,19 +423,19 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
                 <a
                   href="http://bit.ly/3THXcpZ"
                   rel="noreferrer"
-                  className="boton_como_llegar"
+                  className={styles.boton_como_llegar}
                 >
                   Cómo llegar
                 </a>
                 <br></br>
                 <a
                   href={`tel:${alcala.result?.international_phone_number}`}
-                  className="telefono_popup"
+                  className={styles.telefono_popup}
                 >
                   <span>Llamar: </span>
                   {alcala.result?.international_phone_number}
                 </a>
-                <span className="boton_ver_mas">
+                <span className={styles.boton_ver_mas}>
                   <Link
                     to="alcala"
                     smooth={true}

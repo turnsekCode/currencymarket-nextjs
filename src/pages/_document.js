@@ -4,6 +4,7 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html lang="es">
+      <link rel="icon" href="../../assets/favicon.png" />
       <Head />
       <body>
         <Script id="livechat" strategy="afterInteractive">
@@ -27,7 +28,7 @@ export default function Document() {
             LiveChat
           </a>
         </noscript>
-        <link rel="icon" href="../../assets/favicon.png" />
+
         <link
           rel="stylesheet preload prefetch"
           href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
