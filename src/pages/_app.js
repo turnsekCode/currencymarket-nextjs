@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 
 export default function App({ Component, pageProps }) {
-  const gtmTd = process.env.NEXT_PUBLIC_GTM || "";
+  const gtmId = process.env.NEXT_PUBLIC_GTM || "";
   const tagManagerArgs = {
-    gtmTd,
+    gtmId,
   };
 
   useEffect(() => {

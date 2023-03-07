@@ -113,8 +113,8 @@ const Accordion2 = ({
               <Image
                 src={GoogleLogo}
                 alt="Logo google"
-                width={100}
-                height={56}
+                width={106}
+                height={60}
               />
             </div>
             <div className={styles.contenedor_resenas}>

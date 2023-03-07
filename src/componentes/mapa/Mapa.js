@@ -94,7 +94,7 @@ const Mapa = ({
     <section>
       <h2 className={styles.titulo_mapa}>
         <span>¿Dónde cambiar euros a dólares?</span> Casas de Cambio en
-        Barcelona
+        Barcelona y Madrid
       </h2>
       <div id="contendor_mapa" className={styles.contenedor_mapa}>
         <Map

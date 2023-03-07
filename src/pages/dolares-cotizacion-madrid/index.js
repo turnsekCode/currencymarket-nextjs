@@ -1,10 +1,16 @@
 import { useState } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import PopupGoogle from "../../componentes/popup google/PopupGoogle";
-import Mapa from "../../componentes/mapa_madrid/Mapa";
+//import PopupGoogle from "../../componentes/popup google/PopupGoogle";
+//import Mapa from "../../componentes/mapa_madrid/Mapa";
 import Contenedor from "../../componentes/contenedor/Contenedor";
 import ConversorGoogle from "../../componentes/conversor_google/ConversorGoogle";
+import dynamic from "next/dynamic";
+
+const DynamicPopUp = dynamic(() =>
+  import("../../componentes/popup google/PopupGoogle")
+);
+const DynamicMapa = dynamic(() => import("../../componentes/mapa_madrid/Mapa"));
 
 export default function Home({
   tirso,
@@ -39,7 +45,7 @@ export default function Home({
           <img src={Rectalgle34} alt="" />
         </div>*/}
         <ConversorGoogle open={open} setOpen={setOpen} />
-        <Mapa
+        <DynamicMapa
           tirso={tirso}
           alcala={alcala}
           bernardo={bernardo}
@@ -48,7 +54,7 @@ export default function Home({
           delicias={delicias}
         />
       </Contenedor>
-      <PopupGoogle open={open} setOpen={setOpen} />
+      <DynamicPopUp open={open} setOpen={setOpen} />
     </>
   );
 }

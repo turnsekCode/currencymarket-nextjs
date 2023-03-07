@@ -3,6 +3,7 @@ import styles from "./conversor.module.css";
 
 const Conversor = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch(
@@ -11,6 +12,7 @@ const Conversor = () => {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
+        setLoading(true);
       });
   }, []);
 
@@ -75,7 +77,10 @@ const Conversor = () => {
             onChange={calcularCambio}
             readOnly
           />
-          $<p className={styles.info_precio}>1$ = {replace / 1} €</p>
+          $
+          <p className={styles.info_precio}>
+            1$ = {loading ? replace / 1 : "Cargando..."} €
+          </p>
         </div>
       </div>
     </>

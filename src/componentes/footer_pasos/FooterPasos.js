@@ -33,8 +33,8 @@ const FooterPasos = () => {
         className={styles.barra_inferior}
         src={Rectangle46}
         alt="barra"
-        width="0"
-        height="0"
+        width={1060}
+        height={5}
       />
     </section>
   );

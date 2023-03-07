@@ -1,10 +1,18 @@
 import { useState } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import PopupGoogle from "../../componentes/popup google/PopupGoogle";
-import Mapa from "../../componentes/mapa_barcelona/Mapa";
+//import PopupGoogle from "../../componentes/popup google/PopupGoogle";
+//import Mapa from "../../componentes/mapa_barcelona/Mapa";
 import Contenedor from "../../componentes/contenedor/Contenedor";
 import ConversorGoogle from "../../componentes/conversor_google/ConversorGoogle";
+import dynamic from "next/dynamic";
+
+const DynamicPopUp = dynamic(() =>
+  import("../../componentes/popup google/PopupGoogle")
+);
+const DynamicMapa = dynamic(() =>
+  import("../../componentes/mapa_barcelona/Mapa")
+);
 
 export default function Home({ santantoni }) {
   const [open, setOpen] = useState(null);
@@ -32,7 +40,7 @@ export default function Home({ santantoni }) {
           <img src={Rectalgle34} alt="" />
         </div>*/}
         <ConversorGoogle open={open} setOpen={setOpen} />
-        <Mapa
+        <DynamicMapa
           santantoni={santantoni}
           //tirso={tirso}
           //alcala={alcala}
@@ -42,7 +50,7 @@ export default function Home({ santantoni }) {
           //delicias={delicias}
         />
       </Contenedor>
-      <PopupGoogle open={open} setOpen={setOpen} />
+      <DynamicPopUp open={open} setOpen={setOpen} />
     </>
   );
 }
