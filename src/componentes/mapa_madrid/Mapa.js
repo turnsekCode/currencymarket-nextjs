@@ -77,8 +77,7 @@ const Mapa = ({ tirso, alcala, bernardo, caminos, tetuan, delicias }) => {
   return (
     <section>
       <h2 className={styles.titulo_mapa}>
-        <span>¿Dónde cambiar euros a dólares?</span> Casas de Cambio en
-        Barcelona
+        <span>¿Dónde cambiar euros a dólares?</span> Casas de Cambio en Madrid
       </h2>
       <div id="contendor_mapa" className={styles.contenedor_mapa}>
         <Map
