@@ -2,7 +2,7 @@
     height: 60px;
     position: fixed;
     bottom: 15px;
-    left: 7px;
+    left: 65px;
     background: #003071;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
     padding: 10px 5px;
     gap: 10px;
     text-decoration: none;
-    width: 260px;
+    width: 211px;
     height: 40px;
 }
 
@@ -32,7 +32,7 @@
 .contenedor_llamar_fijo h3 {
     margin: 0;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 20px;
     color: #fff;
 }
