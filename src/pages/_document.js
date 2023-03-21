@@ -6,7 +6,6 @@ export default function Document() {
     <Html lang="es">
       <link rel="icon" href="../../assets/favicon.png" />
       <Script
-        strategy="lazyOnload"
         id="Cookiebot"
         src="https://consent.cookiebot.com/uc.js"
         data-cbid="66a968ad-70de-4703-81be-84844ed28395"
@@ -14,7 +13,6 @@ export default function Document() {
         type="text/javascript"
       ></Script>
       <Script
-        strategy="lazyOnload"
         id="CookieDeclaration"
         src="https://consent.cookiebot.com/66a968ad-70de-4703-81be-84844ed28395/cd.js"
         type="text/javascript"
