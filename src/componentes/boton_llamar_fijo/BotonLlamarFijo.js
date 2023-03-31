@@ -8,7 +8,7 @@ const BotonLlamarFijo = () => {
       <a href="tel:672616533">
         <LocalPhoneIcon />
         <h3>
-          LLAMAR <span>A CURRENCY MARKET</span>
+          LLAMAR <span>AL 672 61 65 33</span>
         </h3>
       </a>
     </div>
