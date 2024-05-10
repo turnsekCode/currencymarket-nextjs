@@ -60,32 +60,32 @@ export default function Home({
 }
 export async function getStaticProps() {
   const ciudad2 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-tirsodemolina.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-tirsodemolina.txt`
   );
   const tirso = await ciudad2.json();
 
   const ciudad3 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-alcala.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-alcala.txt`
   );
   const alcala = await ciudad3.json();
 
   const ciudad4 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-sanbernardo.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-sanbernardo.txt`
   );
   const bernardo = await ciudad4.json();
 
   const ciudad5 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-cuatrocaminos.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-cuatrocaminos.txt`
   );
   const caminos = await ciudad5.json();
 
   const ciudad6 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-tetuan.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-tetuan.txt`
   );
   const tetuan = await ciudad6.json();
 
   const ciudad7 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-delicias.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-delicias.txt`
   );
   const delicias = await ciudad7.json();
 

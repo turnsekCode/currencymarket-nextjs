@@ -56,7 +56,7 @@ export default function Home({ santantoni }) {
 }
 export async function getStaticProps() {
   const ciudad1 = await fetch(
-    `https://quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-santantoni.txt`
+    `https://panel.quickgold.es/archivos-cache/archivos-cache-gmb/cached-place_id-santantoni.txt`
   );
   const santantoni = await ciudad1.json();
 
